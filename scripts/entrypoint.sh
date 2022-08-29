@@ -1,7 +1,7 @@
 #!/bin/sh
 
 
-if [[ "$(ls -A app/ | wc -w | xargs)" > 1 ]]
+if [[ "$(ls -A app/ | wc -w | xargs)" -gt "1" ]]
 then
   npm start --prefix ./app
 else
