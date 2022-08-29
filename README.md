@@ -4,12 +4,13 @@ This project will scaffold a basic react-app and provide a streamlined way to pa
 
 ## WHY USE THIS?
 
-If you need to quickly get started with a react app and want to it to be containerized, but are not sure how to do those things yet, this will ease the process.
+Containerzing the app from the start ensures the environment remains separate from the local system.
+If you need to quickly get started with a react app, this will ease the process.
 
 ## USAGE
 
     Requirements:
-        - Linux or MacOS
+        - Linux, Unix, or MacOS
         - Docker
         - Git
 
@@ -23,12 +24,16 @@ If you need to quickly get started with a react app and want to it to be contain
 
     `./run.sh --build`
 
-3. Once container is built and react-app is running, open a browser and open
+3. Run the container and it will populate the app/ folder with a react starter app:
+
+    `./run.sh --run`
+
+4. Once container is built and react-app is running, open a browser and open
 
     `localhost:8080`
 
-4. Edit source files in app/ and once saved, you can refresh the browser window to see changes.
+6. Edit source files in app/ and once saved, you can refresh the browser window to see changes.
 
-5. To build a container with your app that is current, stop the current running container, then run the following command:
+7. To build a container with your app that is current, stop the current running container, then run the following command:
 
     `./run.sh --build`
