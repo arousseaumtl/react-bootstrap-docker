@@ -11,7 +11,7 @@ if [ $# -eq 0 ]
   then
     echo "Usage: run.sh [--run (-r), --build (-b), -tty (-t)"
   else
-    [[ "$@" =~ "--run" || "$@" =~ "-r" ]] && ( docker run --rm -v $(pwd)/app:/home/user/app -p 8080:3000 $APP_NAME )
+    [[ "$@" =~ "--run" || "$@" =~ "-r" ]] && ( docker run --rm -v $(pwd)/app:/home/user/app -p 8585:3000 $APP_NAME )
     [[ "$@" =~ "--build" || "$@" =~ "-b" ]] && ( docker build --platform=${MACHINE_TYPE} -t $APP_NAME:latest . )
     [[ "$@" =~ "--tty" || "$@" =~ "-t" ]] && ( docker run -it -v $(pwd)/app:/home/user/app --entrypoint /bin/sh $APP_NAME )
 fi

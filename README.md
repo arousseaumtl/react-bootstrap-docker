@@ -30,7 +30,7 @@ If you need to quickly get started with a react app, this will ease the process.
 
 4. Once container is built and react-app is running, open a browser and open
 
-    `localhost:8080`
+    `localhost:8585`
 
 6. Edit source files in app/ and once saved, you can refresh the browser window to see changes.
 
