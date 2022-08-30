@@ -3,8 +3,7 @@ FROM alpine
 RUN apk update && \
     apk add \
         npm \
-        git && \
-    rm -rf /var/cache/apk/*
+        git
 
 RUN addgroup user; adduser user -G user -D
 COPY scripts/* /home/user/
