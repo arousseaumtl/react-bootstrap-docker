@@ -7,5 +7,5 @@ then
 else
   rm app/.gitkeep;
   yes | npx create-react-app app && \
-  npm start --prefix ./app
+  FAST_REFRESH=false npm start --prefix ./app
 fi

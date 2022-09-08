@@ -1,20 +1,18 @@
 FROM alpine
 
 RUN apk update && \
-    apk add \
-        npm \
-        git
+    apk add npm
 
-RUN addgroup user; adduser user -G user -D
-COPY scripts/* /home/user/
+RUN addgroup app; adduser app -G app -D
+COPY scripts/* /home/app/
 RUN mkdir /home/user/app
 COPY app/* /home/user/app/
-RUN chown -R user:user /home/user && \
-    chmod +x /home/user/*.sh
+RUN chown -R app:app /home/app && \
+    chmod +x /home/app/*.sh
 
-USER user
+USER app
 
-WORKDIR /home/user/
+WORKDIR /home/app/
 
 ENTRYPOINT ["/bin/sh"]
 CMD ["entrypoint.sh"]

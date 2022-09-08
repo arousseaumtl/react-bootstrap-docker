@@ -30,10 +30,15 @@ If you need to quickly get started with a react app, this will ease the process.
 
 4. Once container is built and react-app is running, open a browser and open
 
-    `localhost:8585`
+    `localhost:3000`
 
 6. Edit source files in app/ and once saved, you can refresh the browser window to see changes.
 
 7. To build a container with your app that is current, stop the current running container, then run the following command:
 
     `./run.sh --build`
+
+
+If you need to make changes inside the container, such as adding packages to the project:
+
+    `./run.sh --tty`
