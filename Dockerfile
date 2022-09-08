@@ -5,8 +5,8 @@ RUN apk update && \
 
 RUN addgroup app; adduser app -G app -D
 COPY scripts/* /home/app/
-RUN mkdir /home/user/app
-COPY app/* /home/user/app/
+RUN mkdir /home/app/app
+COPY app/* /home/app/app/
 RUN chown -R app:app /home/app && \
     chmod +x /home/app/*.sh
 
