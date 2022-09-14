@@ -28,7 +28,7 @@ If you need to quickly get started with a react app, this will ease the process.
 
     `./run.sh --run`
 
-4. Once container is built and react-app is running, open a browser and open
+4. Once container is built and react-app is running, open the follwing url in a browser:
 
     `localhost:3000`
 
