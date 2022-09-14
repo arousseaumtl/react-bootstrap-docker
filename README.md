@@ -32,7 +32,7 @@ If you need to quickly get started with a react app, this will ease the process.
 
     `localhost:3000`
 
-6. Edit source files in app/ and once saved, you can refresh the browser window to see changes.
+6. Edit source files in app/ and once saved, the browser window will refresh itself. You do not ned to refresh the window.
 
 7. To build a container with your app that is current, stop the current running container, then run the following command:
 
