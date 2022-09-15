@@ -4,7 +4,7 @@ This project will scaffold a basic react-app and provide a streamlined way to pa
 
 ## WHY USE THIS?
 
-Containerzing the app from the start ensures the environment remains separate from the local system.
+Containerizing the app from the start ensures the environment remains separate from the local system.
 If you need to quickly get started with a react app, this will ease the process.
 
 ## USAGE
